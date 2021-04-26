@@ -47,7 +47,7 @@ module "compute" {
    admin_password                = var.admin_password
    vm_size                       = var.vm_size
    network_interface_ids         = [module.network.network_interface_ids_public_linuxMaster]
-   availability_set_id           = module.network.availability_set_public
+   /*availability_set_id           = module.network.availability_set_public*/
    computer_name                 = var.linuxVMName[0]
 }
 
@@ -62,7 +62,7 @@ module "compute1" {
    admin_password                = var.admin_password
    vm_size                       = var.vm_size
    network_interface_ids         = [module.network.network_interface_ids_public_linuxBuild]
-   availability_set_id           = module.network.availability_set_public
+   /*availability_set_id           = module.network.availability_set_public*/
    computer_name                 = var.linuxVMName[1]
 }
 
@@ -77,7 +77,7 @@ module "compute2" {
    admin_password                = var.admin_password
    vm_size                       = var.vm_size
    network_interface_ids         = [module.network.network_interface_ids_public_linuxDeploy]
-   availability_set_id           = module.network.availability_set_public
+   /*availability_set_id           = module.network.availability_set_public*/
    computer_name                 = var.linuxVMName[2]
 }
 
@@ -92,7 +92,7 @@ module "compute3" {
    admin_password                = var.admin_password
    vm_size                       = var.vm_size
    network_interface_ids         = [module.network.network_interface_ids_private]
-   availability_set_id           = module.network.availability_set_private
+ /*availability_set_id           = module.network.availability_set_private */
    computer_name                 = var.linuxVMName[3]
  
 
