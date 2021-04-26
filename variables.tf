@@ -38,6 +38,6 @@ default = "Standard_DS1_v2"
 variable "linuxVMName" {
 description = "linux vm names"
 type = list(string)
-default = ["VM-JenkinsBuild","VM-JenkinsDeploy","DB"]
+default = ["VM-JenkinsMaster","VM-JenkinsBuild","VM-JenkinsDeploy","DB"]
 }
 
